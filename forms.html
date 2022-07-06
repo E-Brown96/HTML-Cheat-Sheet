@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="HTML & CSS Cheatsheet" content="This is my cheat sheet website">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>
+            My personal cheat sheet website
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">The Ultimate Cheat Sheet</h1>
+        </header>
+        <nav>
+                <span>
+                    <a href="index.html">Home</a>
+                </span>
+                <span>
+                    <a href="setup.html">Setting up</a>
+                </span>
+                <span>
+                    <a href="tables.html">Tables</a>
+                </span>
+                <span>
+                    <a href="css.html">CSS</a>
+                </span>
+        </nav>
+        <div class="Forms">
+            <h3 id="Forms">How to write forms in html</h3>
+            <p>
+                The tables below show how to set up and write forms into html. Forms are arguably the most difficult 
+                part of html but one of the most useful. This will also include login verfication.
+            </p>
+            <p>
+                For a form to be processed the computer needs a HTTP request to communicate/ interface with people.
+                We need to give the form the location of where the forms information goes and what http request to make.
+                <p>All forms have an <strong>action</strong> that determines where the information is sent.</p>
+                <p>Then the <strong>method</strong> is assigned a http verb.</p>
+            </p>
+            <h4 id="h4">The form tags</h4>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>&lt;form action="/example.html" method="POST"&gt;</td>
+                    <td>Form tag</td>
+                    <td>This shows a basic form request with an action showing the file related to the form and a method which gives a html verb</td>
+                </tr>
+                <tr>
+                    <td>&lt;form(With sub elements)&gt;</td>
+                    <td>&lt;h1&gt; or &lt;p&gt;</td>
+                    <td>Form sub tags</td>
+                    <td>These are sub tags that can be added with a form tag and are made up in the tags within the body shown earlier</td>
+                </tr>
+            </table>
+            <p>
+                To add text input into a form we need an input. The input will have a type element that determines how it reads.
+            </p>
+            <p>
+                The first input type is shown below in the table and the result is shown as an example below the table.
+            </p>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>&lt;input type="text" name="first-text-field"&gt;</td>
+                    <td>Input tag</td>
+                    <td>When a form is submitted the entered text is sent to the action page and the value of <strong>name</strong> is the text</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>&lt;input type="text" name="text" value="text"&gt;</td>
+                    <td>Input tag with name and value</td>
+                    <td>This shows the input with a name and value</td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>&lt;label for="text"&gt;</td>
+                    <td>Form label tag</td>
+                    <td>This adds a label to the form but note to add this to the input an id needs to be added to the input &lt;input type="text" name="text id="text&gt;</td>
+                </tr>
+            </table>
+            <form action="index.html" method="POST">
+                <input type="example" name="example" id="example" value="example">
+                <label for="example">This is an example form.
+                </label>
+            </form>
+            <p>
+                The form above was written using the tags shown in the table above but subsitutiing the word text for example and that was it. 
+                The last thing to do would be to hook the form up to a database at the minute it does not go anywhere.
+            </p>
+            <p>
+                Another input type is a password or a number etc. The table below shows a number 
+                of different input types.
+            </p>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;input(password)&gt;</td>
+                    <td>&lt;input type="password" id="user-password name="user-password"&gt;</td>
+                    <td>Input tag for passwords</td>
+                    <td>This shows the input for a password input type</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(number)&gt;</td>
+                    <td>&lt;input type="number" name="text" id="text" step="1"&gt;</td>
+                    <td>Input tag with for numbers</td>
+                    <td>This shows the input for a number input type, the step property is telling us that only intergers can be input</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(range)&gt;</td>
+                    <td>&lt;input id="volume" name="volume" type="range" min="0" max="100" step="1"&gt;</td>
+                    <td>INput tag with a range</td>
+                    <td>This will add an input range type in the form of a slider where we have set the min and max and the fact they must be integers</td>
+                </tr>
+            </table>
+            <p>The table above is the general inputs and options for forms. Below is the table f more advanced options,
+                this includes checkboxes, radio buttons, dropdown lists, datalists and text areas.
+            </p>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;input(Checkbox)&gt;</td>
+                    <td>&lt;input id="cheese" name="topping" type="checkbox" value="cheese"&gt;</td>
+                    <td>Input tag for checkbox</td>
+                    <td>This shows the input for a checkbox input type</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(Radio buttons)&gt;</td>
+                    <td>&lt;input id="two" name="answer" type="radio" value="2"&gt;</td>
+                    <td>Input tag with for radio buttons</td>
+                    <td>This shows the input for a radio button type</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(dropdown list)&gt;</td>
+                    <td>&lt;select id="lunch" name="lunch"&gt; &lt;option value="pizza"&gt; Pizza</td>
+                    <td>Input tag with a dropdown list</td>
+                    <td>This will add a dropdown list with the dropdown option being pizza </td>
+                </tr>
+                <tr>
+                    <td>&lt;input(datalist)&gt;</td>
+                    <td>&lt;input type="text" list="cities" id="city" name="city"&gt; &lt;datalist id="cities"&gt; &lt;option value-"text1"&gt;</td>
+                    <td>Input tag for datalists</td>
+                    <td>This shows the input for a datalists, this will add a datalist with one option so far of text 1 which in this instance willbe a city</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(textarea)&gt;</td>
+                    <td>&lt;textarea id="blog" name="blog" rows="5" cols="30"&gt;</td>
+                    <td>Input tag for textarea</td>
+                    <td>This will add a textarea input with 5 rows and 30 columns</td>
+                </tr>
+                <tr>
+                    <td>&lt;input(submit button)&gt;</td>
+                    <td>&lt;input type="submit" value="Send"&gt;</td>
+                    <td>Input tag for submit buttons</td>
+                    <td>This shows the input for a submit button</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

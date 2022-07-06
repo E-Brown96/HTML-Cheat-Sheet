@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="HTML & CSS Cheatsheet" content="This is my cheat sheet website">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>
+            My personal cheat sheet website
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">The Ultimate Cheat Sheet</h1>
+        </header>
+        <nav>
+                <span>
+                    <a href="index.html">Home</a>
+                </span>
+                <span>
+                    <a href="tables.html">Tables</a>
+                </span>
+                <span>
+                    <a href="forms.html">Forms</a>
+                </span>
+                <span>
+                    <a href="css.html">CSS</a>
+                </span>
+        </nav>
+        <div id="intro">
+            <p>
+                Hello there! This is my attempt at making a cheat sheet website for html and css and will be updated periodically.
+            </p>
+        </div>
+        <h2>HMTL Cheat Sheet</h2>
+        <div class="Set-up">
+            <h3 id="Set-up">How to set up a html file</h3>
+            <p>
+                The tables below shows how I would set-up a html doc and what the tags mean. The first table will be compromised of 
+                the most important tags within html. Each of these are filled with smaller tags.
+            </p>
+            <h4 id="h4">The key tags</h4>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td></td>
+                    <td>Document type</td>
+                    <td>This simply lets the browser know that the code is to be written in html format</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td></td>
+                    <td>HTML tag</td>
+                    <td>This will tell the webpage that everything inside this tag is html code</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>charset = "utf-8"</td>
+                    <td>Meta data part 1</td>
+                    <td>This meta data does not appear on the page but lets the browser know what charcter set the html is using</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>name="name" content="description"</td>
+                    <td>Meta data part 2</td>
+                    <td>This meta data will appear on the tab view or the google search for your website</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td></td>
+                    <td>Head tag</td>
+                    <td>This data will not appear in your webpage but is data the web page will need such as links to style sheets etc</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td></td>
+                    <td>Body tag</td>
+                    <td>This will contain all your data visible on the webpage</td>
+                </tr>
+            </table>
+            <p>Once these tags have been set up we can start adding data and tags into the head section.</p>
+            <h4 id="h4">Tags within the head</h4>
+            <p>The tags below are all entered between the opening and closing tag of the head.</p>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>href="style.css" rel="stylesheet"</td>
+                    <td>Link tag</td>
+                    <td>This will link your html document to your css document, but note the link tag can be used for general links as well(Goes within the head tag)</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td></td>
+                    <td>Title tag</td>
+                    <td>This is simply the title of your web page but again it will not appear on the webpage(Goes within the head tag)</td>
+                </tr>
+            </table>
+            <p>Then we can start to input data and tags within the body section. Everything that is within this <body>
+                section will appear visible on the web page. 
+            </body> </p>
+            <h4 id="h4">Tags within the body</h4>
+            <p>The table below is a general list of tags that can be used within the body seciton of the 
+                html document. (More complex tags can be found in the tables later on).
+            </p>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Sub-Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td></td>
+                    <td>Header tag</td>
+                    <td>Similar to the head tag but it goes within the ody tag and does appear on your page as a header would appear on microsft word</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>&lt;h2&gt;, &lt;h3&gt;.... &lt;h6&gt;</td>
+                    <td>Heading tags</td>
+                    <td>These are your heading tags for the page and go down to h6 with h1 being the largest</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td></td>
+                    <td>Section tags</td>
+                    <td>These specify new sections within your page</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td></td>
+                    <td>Division tags</td>
+                    <td>Similar to section tags they divide up the page</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td></td>
+                    <td>Article tags</td>
+                    <td>These specify new sections that are specifically article sections eg a block of text</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td></td>
+                    <td>Paragraph tags</td>
+                    <td>Specify a new paragraph</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>href="URL"</td>
+                    <td>Link tags</td>
+                    <td>These are link tags that can link any element using a URL(Note if you add target="_blank" the link opens in a new tab</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>src="URL" alt="description of the image"</td>
+                    <td>Image tags</td>
+                    <td>Used to add an image into a webpage. If the image cannot be loaded the description is displayed</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>&lt;li&gt;</td>
+                    <td>Ordered list tags</td>
+                    <td>These create an ordered list which will be numbered</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>&lt;li&gt;</td>
+                    <td>Unordered list tags</td>
+                    <td>These create an unordered list which will be bullet pointed</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
